@@ -7,36 +7,50 @@ import CloseIcon from "@mui/icons-material/Close";
 
 export default function Navbar() {
   const [click, setClick] = useState(true);
+  const [activeNav, setActiveNav] = useState("");
 
   function handlenav() {
     setClick(!click);
   }
+
   return (
     <nav>
       <div className={styles.navbar}>
         <div className={styles.image}>
-         <a href="/#"><img src={GYM} alt="GYM" /></a> 
+          <a href="/#">
+            <img src={GYM} alt="GYM" />
+          </a>
         </div>
         <div className={styles.navbar_tems}>
-          <li>
-            <a href="/#">Home</a>
+          <li className={activeNav === "#" ? styles.first_a : ""}>
+            <a onClick={() => setActiveNav("#")} href="/#">
+              Home
+            </a>
           </li>
-          <li>
-            <a href="#about">About_Us</a>
+          <li className={activeNav === "#about" ? styles.first_a : ""}>
+            <a onClick={() => setActiveNav("#about")} href="#about">
+              About_Us
+            </a>
           </li>
-          <li>
-            <a href="#program">Program</a>
+          <li className={activeNav === "#program" ? styles.first_a : ""}>
+            <a onClick={() => setActiveNav("#program")} href="#program">
+              Program
+            </a>
           </li>
-          <li>
-            <a href="#trainer">Trainer</a>
+          <li className={activeNav === "#trainer" ? styles.first_a : ""}>
+            <a onClick={() => setActiveNav("#trainer")} href="#trainer">
+              Trainer
+            </a>
           </li>
-          <li>
-            <a href="#pricing">Pricing</a>
+          <li className={activeNav === "#pricing" ? styles.first_a : ""}>
+            <a onClick={() => setActiveNav("#pricing")} href="#pricing">
+              Pricing
+            </a>
           </li>
           <Button variant="contained" color="success">
             Join Us
           </Button>
-        </div> 
+        </div>
         <div onClick={handlenav} className={styles.mobile}>
           {click ? (
             <DehazeIcon />
@@ -60,10 +74,10 @@ export default function Navbar() {
                   <a href="#pricing">Pricing</a>
                 </li>
                 <Button variant="contained" color="success">
-            Join Us
-          </Button>
+                  Join Us
+                </Button>
               </div>
-            </ div>
+            </div>
           )}
         </div>
       </div>

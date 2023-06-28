@@ -12,8 +12,8 @@ function App() {
      <Home/>
      <About/>
      <Program/>
-     <Pricing/>
     <Trainer/>
+     <Pricing/>
     </>
   );
 }

@@ -1,6 +1,6 @@
 nav {
   position: sticky;
-  top: 0;
+  top: 0px;
 }
 .navbar {
   background-color: blue;
@@ -13,6 +13,9 @@ nav {
   .mobile {
     display: none;
   }
+}
+.mobile {
+  display: none;
 }
 
 .navbar_tems {
@@ -35,17 +38,31 @@ nav {
   padding: 0.5rem;
   padding-left: 1rem;
   border-radius: 0.5rem;
+  transition: 0.6s ease-in-out;
+}
+.navbar_tems .first_a {
+  background-color: rgb(10, 6, 14);
+  border: 1px solid ;
+  width: 4.2rem;
+  height: 1.3rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem;
   transition: 0.5s ease-in-out;
 }
+
 .navbar_tems a {
   color: white;
   text-decoration: none;
 }
-.navbar_tems li:hover {
+ .navbar_tems li:hover {
   background-color: rgb(10, 6, 14);
   cursor: pointer;
   border: 1px solid rgb(206, 173, 173);
 }
+
+
 .change_background{
   background-color: rgb(10, 6, 14);
   border: 1px solid rgb(206, 173, 173);
@@ -61,6 +78,7 @@ nav {
   cursor: pointer;
 }
 
+
 @media screen and (max-width: 750px) {
   .navbar_tems {
     display: none;
@@ -74,6 +92,9 @@ nav {
       margin-left: 80%;
       margin-top: 1.5rem;
     }
+  }
+  .mobile {
+    display: unset;
   }
   .mobile_list {
     background-color: blue;

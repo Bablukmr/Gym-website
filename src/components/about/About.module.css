@@ -44,6 +44,8 @@ font-size: 2rem;
     width: 6rem;
     height: 2.2rem;
     border-radius: .4rem;
+    cursor: pointer;
+    color: #fff;
   }
 
 .second_text li{
