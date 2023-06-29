@@ -4,7 +4,7 @@ import img1 from "../assets/img1.jpg";
 import yoga from "../assets/yoga.jpg";
 import Aerobic from "../assets/Aerobic.jpg";
 import Weight from "../assets/Liffting.jpg";
-import Weight_Loss from "../assets/Weight_loss.jpg";
+import Weight_Loss from "../assets/imgw.jpg";
 import Flexiblity from "../assets/Flexiblity.jpg";
 import Dance from "../assets/Dance.jpg";
 
