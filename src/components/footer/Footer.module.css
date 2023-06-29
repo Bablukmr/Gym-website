@@ -1,5 +1,6 @@
 .main_footer{
     background-color: rgb(25, 16, 16);
+    border-top: 2px solid #158730;
     width: 100%;
     color: #a89f9f;
     display: grid;

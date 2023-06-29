@@ -80,6 +80,7 @@ border: 4px solid rgb(87, 78, 78);
     border-radius: .5rem;
     background-color: green;
     cursor: pointer;
+    color: #dccbcb;
 }
 @media screen and (max-width: 750px) {
     .pricing_section{

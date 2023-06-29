@@ -7,7 +7,7 @@ export default function Pricing() {
       <div className={styles.main_section}>
         <div className={styles.first_card}>
           <h1>Day Pass</h1>
-          <h1>$20 /Pass</h1>
+          <h1>$15 /Pass</h1>
          <ul>
           <li>1 Day Pass</li>
           <li>Free Gym Access</li>
@@ -48,6 +48,7 @@ export default function Pricing() {
           </ul>
         </div>
       </div>
+      
     </section>
   );
 }
