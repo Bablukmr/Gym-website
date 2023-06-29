@@ -7,9 +7,25 @@ export default function Pricing() {
       <div className={styles.main_section}>
         <div className={styles.first_card}>
           <h1>Day Pass</h1>
+          <h1>$20 /Pass</h1>
+         <ul>
+          <li>1 Day Pass</li>
+          <li>Free Gym Access</li>
+          <li>24 Hour Accces</li>
+         </ul>
+         <button onClick={()=>alert("Thankyou for choosing us")} className={styles.buttons}>Get Started</button>
         </div>
         <div className={styles.second_card}>
           <h1>Months to Month</h1>
+          <h1>$90 /Month</h1>
+         <ul>
+          <li>$99 Joining Fee</li>
+          <li>No Contract</li>
+          <li>Free Gym Access</li>
+          <li>1 Group Class Included</li>
+          <li>24 Hour Accces</li>
+         </ul>
+         <button onClick={()=>alert("Thankyou for choosing us")} className={styles.buttons}>Get Started</button>
         </div>
       </div>
       <div className={styles.text_section}>

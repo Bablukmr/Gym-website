@@ -14,19 +14,81 @@
     margin: 1rem;
     margin-top: 5rem;
 }
-.first_card{
-    width: 100%;
-    height: 75%;
-    margin-top: 1rem;
-    background-color: blue;
-    border-radius: 1rem;
-}
-.second_card{
-    width: 100%;
-    height: 80%;
-    background-color: brown;
-    border-radius: 1rem;
-}
+
 .text_section{
     margin-top: 5rem;
+}
+.text_div{
+    background-color: rgb(27, 26, 26);
+    color: #fff;
+    width: 80%;
+    height: 70%;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid #9b7c7c;
+}
+.first_card{
+    width: 70%;
+    height: 60%;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: rgb(161, 161, 188);
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid #fff;
+    transition:all .6s ease-in-out .1s;
+}
+.first_card h1{
+margin-left: 10%;
+}
+.second_card h1{
+    margin-left: 10%;   
+}
+.second_card{
+    width: 80%;
+    height: 70%;
+    /* align-items: center; */
+    /* margin: 1rem; */
+    padding: 1rem;
+    /* margin-top: 1rem; */
+    background-color: rgb(142, 142, 153);
+    border-radius: 1rem;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid #fff;
+    transition:all .6s ease-in-out .1s;
+}
+.second_card:hover{
+background-color: rgb(121, 108, 89);
+width: 87%;
+height: 77%;
+border: 4px solid rgb(87, 78, 78);
+}
+.first_card:hover{
+    background-color: rgb(121, 108, 89);
+    width: 75%;
+height: 65%;
+border: 4px solid rgb(87, 78, 78);
+}
+.buttons{
+    margin: 2rem;
+    width: 6rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: green;
+    cursor: pointer;
+}
+@media screen and (max-width: 750px) {
+    .pricing_section{
+        height: 190vh;
+        grid-template-columns: 1fr;
+    }
+    .main_section{
+       
+        grid-template-columns: 1fr;
+    }
+
 }
