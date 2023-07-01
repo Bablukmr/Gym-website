@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SignIn from '../signin/SignIn';
+// import CloseIcon from '@mui/icons-material/Close';
 
 export default function LogIn() {
   const [account, setAccount] = useState(true);
@@ -34,7 +35,7 @@ export default function LogIn() {
           noValidate
           autoComplete="off"
         >
-          <h1>LogIn</h1>
+          <h1>LogIn</h1> 
           <TextField
             id="outlined-basic"
             label="User Name"
@@ -65,7 +66,8 @@ export default function LogIn() {
           </Button>
         </Box>
       ) : (
-        <SignIn />
+        <SignIn
+        />
       )}
     </>
   );
