@@ -18,17 +18,17 @@
   margin: 4rem;
   font-size: 2rem;
 }
-.home_content button{
+.home_content button {
   background-color: green;
   width: 6rem;
   height: 2.2rem;
-  border-radius: .4rem;
+  border-radius: 0.4rem;
   cursor: pointer;
   color: #fff;
 }
 
 @media screen and (max-width: 750px) {
-    /* .home_content {
+  /* .home_content {
         width: 80vw;
     }
 
@@ -36,19 +36,18 @@
     .home_image img {
         display: none;
     } */
-    .home_section_one {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-    .home_content {
-      width: 80vw;
-      height: 40%;
+  .home_section_one {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .home_content {
+    width: 80vw;
+    height: 40%;
   }
   .home_image img {
     width: 40vw;
     height: 70%;
     margin: 2rem;
     margin-left: 8rem;
-}
-
+  }
 }
