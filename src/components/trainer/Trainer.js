@@ -65,7 +65,7 @@ export default function Trainer() {
       <div className={styles.buttons}>
         {btnmore ? (
           <button onClick={handleMore} className={styles.more_btn}>
-            See More..
+            See More...
           </button>
         ) : (
           <button onClick={handleLess} className={styles.more_btn}>

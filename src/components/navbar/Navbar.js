@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import GYM from "../assets/gym.png";
-import Button from "@mui/material/Button";
 import DehazeIcon from "@mui/icons-material/Dehaze";
 import CloseIcon from "@mui/icons-material/Close";
+import Modals from "../login-sign/modal";
 
 export default function Navbar() {
   const [click, setClick] = useState(true);
@@ -47,9 +47,7 @@ export default function Navbar() {
               Pricing
             </a>
           </li>
-          <Button variant="contained" color="success">
-            Join Us
-          </Button>
+          <Modals />
         </div>
         <div onClick={handlenav} className={styles.mobile}>
           {click ? (
@@ -73,9 +71,7 @@ export default function Navbar() {
                 <li>
                   <a href="#pricing">Pricing</a>
                 </li>
-                <Button variant="contained" color="success">
-                  Join Us
-                </Button>
+                <Modals />
               </div>
             </div>
           )}
