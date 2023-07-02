@@ -4,8 +4,9 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SignIn from '../signin/SignIn';
 // import CloseIcon from '@mui/icons-material/Close';
+import App from '../../../App'
 
-export default function LogIn() {
+export default function LogIn(props) {
   const [account, setAccount] = useState(true);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -17,13 +18,15 @@ export default function LogIn() {
     const data = JSON.parse(localStorage.getItem('userData'));
 
     if (data && data.name === name && data.email === email && data.password === password) {
-      alert('Login Successfully');
+      alert('Login Successfully')
+      
     } else {
       alert('Invalid credentials');
     }
 
-  };
 
+  };
+ 
   return (
     <>
       {account ? (
@@ -64,6 +67,9 @@ export default function LogIn() {
           <Button onClick={handleLogIn} variant="contained">
             Log In
           </Button>
+          {/* <Button variant="text" >
+           close
+          </Button> */}
         </Box>
       ) : (
         <SignIn
