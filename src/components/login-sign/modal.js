@@ -20,8 +20,8 @@ const style = {
 
 export default function Modals() {
   const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
 
   return (
     <div>
@@ -49,7 +49,7 @@ export default function Modals() {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <LogIn />
+            <LogIn  />
           </Box>
         </Fade>
       </Modal>
