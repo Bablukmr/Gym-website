@@ -1,4 +1,4 @@
-#Gym-website
+# Gym-website
 
 
 This project is based on GYM Site. Here you can register yourself and check the prices and also activities.
