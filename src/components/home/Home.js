@@ -11,7 +11,7 @@ export default function Home() {
         <div className={styles.home_content}>
          <h1> “Take care of your body. It’s the only place you have to live.”  </h1>
          <button>
-           Welcome
+           Welcome..
           </button>
           <Modals/>
           {/* <Modules/> */}
