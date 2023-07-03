@@ -49,7 +49,7 @@ export default function Modals() {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <LogIn  />
+            <LogIn close={handleClose} />
           </Box>
         </Fade>
       </Modal>

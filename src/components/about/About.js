@@ -23,9 +23,9 @@ export default function About() {
       <div className={styles.text_section}>
         <h1>About Us</h1>
         <p>Through our 7-day programme we offer you some useful life questions to think about. We also offer you some answers on these questions but we encourage you to learn more about it yourself. You can read it all at once but we advise you to read and think about your life for the next 7 days. It may become the most valuable week of your life! It can be very valuable in your life. So take some time and invest one week in your life and future!</p>
-        <button>
+       <a href="#program"><button >
         Learn More
-          </button>
+          </button></a> 
           </div>
       </div>
       

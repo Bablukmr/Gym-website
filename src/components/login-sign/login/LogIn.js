@@ -3,14 +3,13 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import SignIn from '../signin/SignIn';
-// import CloseIcon from '@mui/icons-material/Close';
-import App from '../../../App'
 
 export default function LogIn(props) {
   const [account, setAccount] = useState(true);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
   const handleAccount = () => setAccount(!account);
 
   const handleLogIn = () => {
@@ -18,15 +17,17 @@ export default function LogIn(props) {
     const data = JSON.parse(localStorage.getItem('userData'));
 
     if (data && data.name === name && data.email === email && data.password === password) {
-      alert('Login Successfully')
-      
+      alert('Login Successfully');
+      props.close();
     } else {
       alert('Invalid credentials');
     }
-
-
   };
- 
+
+  const handleClose = () => {
+    props.close();
+  };
+
   return (
     <>
       {account ? (
@@ -38,7 +39,7 @@ export default function LogIn(props) {
           noValidate
           autoComplete="off"
         >
-          <h1>LogIn</h1> 
+          <h1>LogIn</h1>
           <TextField
             id="outlined-basic"
             label="User Name"
@@ -67,13 +68,12 @@ export default function LogIn(props) {
           <Button onClick={handleLogIn} variant="contained">
             Log In
           </Button>
-          {/* <Button variant="text" >
-           close
-          </Button> */}
+          <Button variant="text" onClick={handleClose}>
+            Close
+          </Button>
         </Box>
       ) : (
-        <SignIn
-        />
+        <SignIn />
       )}
     </>
   );
