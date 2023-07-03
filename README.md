@@ -14,3 +14,5 @@ Tech used HTML, CSS, Javascript, React.js, react-router, react-icon.
 -Trainer page showcasing the gym trainers and their profiles.
 
 -User authentication system allowing users to sign up, log in.
+
+Deployment Link - https://gym-bablukmr.vercel.app/
