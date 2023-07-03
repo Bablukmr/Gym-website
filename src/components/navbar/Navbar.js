@@ -21,7 +21,7 @@ export default function Navbar() {
             <img src={GYM} alt="GYM" />
           </a>
         </div>
-        <div className={styles.navbar_tems}>
+        <ul className={styles.navbar_items}>
           <li className={activeNav === "#" ? styles.first_a : ""}>
             <a onClick={() => setActiveNav("#")} href="/#">
               Home
@@ -48,14 +48,14 @@ export default function Navbar() {
             </a>
           </li>
           <Modals />
-        </div>
+        </ul>
         <div onClick={handlenav} className={styles.mobile}>
           {click ? (
             <DehazeIcon />
           ) : (
             <div className={styles.mobile_list}>
               <CloseIcon className={styles.closeicon} />
-              <div className={styles.mobile_list_ancor}>
+              <ul className={styles.mobile_list_anchor}>
                 <li>
                   <a href="/#">Home</a>
                 </li>
@@ -72,7 +72,7 @@ export default function Navbar() {
                   <a href="#pricing">Pricing</a>
                 </li>
                 <Modals />
-              </div>
+              </ul>
             </div>
           )}
         </div>
