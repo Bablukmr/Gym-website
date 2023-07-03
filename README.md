@@ -17,13 +17,17 @@ A popular React UI framework that provides pre-built components and styling opti
 
 ## Features
 
-## Home: Provides an overview of the gym, including a welcome message, highlights of featured classes, and a section to showcase the gym's facilities and amenities.
+## Home: 
+Provides an overview of the gym, including a welcome message, highlights of featured classes, and a section to showcase the gym's facilities and amenities.
 
-## Trainers: Showcases the gym's trainers and their profiles, including their experience, specialties, and certifications. Users can get to know the trainers before signing up for classes.
+## Trainers: 
+Showcases the gym's trainers and their profiles, including their experience, specialties, and certifications. Users can get to know the trainers before signing up for classes.
 
-## Membership & Pricing: Allows users to check the available membership options and their respective prices. This page provides information about different membership plans, including their duration and benefits.
+## Membership & Pricing:
+Allows users to check the available membership options and their respective prices. This page provides information about different membership plans, including their duration and benefits.
 
-## Activities: Presents a comprehensive list of activities and classes offered by the gym. Users can explore various fitness programs, such as yoga, cardio, weightlifting, etc., and get detailed information about each activity.
+## Activities:
+Presents a comprehensive list of activities and classes offered by the gym. Users can explore various fitness programs, such as yoga, cardio, weightlifting, etc., and get detailed information about each activity.
 
 Registration & Login: Provides a user authentication system that enables new users to register an account and existing users to log in. This functionality allows users to access personalized features, such as booking classes and managing their membership.
 
