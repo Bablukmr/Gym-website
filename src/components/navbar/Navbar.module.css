@@ -2,11 +2,14 @@ nav {
   position: sticky;
   top: 0px;
   z-index: 101;
+  
 }
 
 .navbar {
+  height: 80px;
   background-color: blue;
   border-radius: 2px;
+  /* border-bottom: 1px solid #c28888; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: grid;
   grid-template-columns: 1fr 1fr;
