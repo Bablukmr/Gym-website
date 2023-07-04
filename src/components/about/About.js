@@ -18,7 +18,7 @@ export default function About() {
       <br/>  <br/>  <br/>
       <div className={styles.section_aboutus}>
       <div className={styles.video_section}>
-        <YouTube videoId="ewwxbpJecx41" opts={opts} onReady={handleReady} />
+        <YouTube videoId="ewwxbpJecx4" opts={opts} onReady={handleReady} />
       </div>
       <div className={styles.text_section}>
         <h1>About Us</h1>
@@ -40,7 +40,7 @@ export default function About() {
 </ul>
         </div>
         <div className={styles.second_video}>
-        <YouTube videoId="G6YoPYfmPmQ1" opts={opts} onReady={handleReady} />
+        <YouTube videoId="G6YoPYfmPmQ" opts={opts} onReady={handleReady} />
         </div>
       </div>
     </section>
